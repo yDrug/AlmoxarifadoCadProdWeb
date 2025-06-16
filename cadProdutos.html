@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cad. Prod</title>
+</head>
+
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Cadastro de Produtos</h3>
+
+
+<div>
+  <form action="/action_page.php">
+  
+	<label for="idProduto">ID Produto</label>
+    <input type="text" id="idProduto" name="idProd" placeholder="666">
+
+  	<label for="nmProduto">Nome do Produto</label>
+    <input type="text" id="nmProduto" name="nmProd" placeholder="CLP - 1200">
+  
+    <label for="deProduto">Descrição do Produto</label>
+    <input type="text" id="deProduto" name="deProd" placeholder="DC/DC/DC">
+
+   	<label for="idMarca">Marca do Produto</label>
+    <select id="idMarca" name="idMarca">
+      <option value="1">Siemens</option>
+      <option value="0">Weidmuller</option>
+    </select>
+    
+  	<label for="cdProduto">Código do Produto</label>
+    <input type="text" id="codProd" name="codProd" placeholder="6ES7212-1AE40-0XB0">
+    
+    <input type="submit" value="Cadastrar">
+  </form>
+</div>
+
+</body>
+</html>
+
+
